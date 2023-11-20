@@ -14,18 +14,22 @@ const ContactFormSection: React.FC = () => {
   const [message, setMessage] = useState('');
   const [subject, setSubject] = useState('');
 
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    const formData = { email, name, message, subject };
-    console.log(formData); // Integración con backend aquí
-  };
-
   return (
     <section className="py-12 w-full bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-6">Contáctanos</h2>
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4">
+        <form action="https://api.web3forms.com/submit" method="POST" className="max-w-lg mx-auto space-y-4">
           <div>
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">Nombre</label>
+            <Input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+          </div>
+          <div>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">Email</label>
+            <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          </div>
+          <div>
+            <input type="hidden" name="access_key" value="45ee6310-e703-43b2-9fd5-530e8134cab1"></input>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success"></input>
             <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-700">Asunto</label>
             <Select value={subject} onValueChange={setSubject}>
               <SelectTrigger id="subject" aria-label="Asunto">
@@ -38,14 +42,6 @@ const ContactFormSection: React.FC = () => {
                 <SelectItem value="general">General</SelectItem>
               </SelectContent>
             </Select>
-          </div>
-          <div>
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">Email</label>
-            <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-          </div>
-          <div>
-            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">Nombre</label>
-            <Input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
           <div>
             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">Mensaje</label>
