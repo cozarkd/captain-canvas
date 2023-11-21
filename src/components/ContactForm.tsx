@@ -33,7 +33,7 @@ const ContactFormSection: React.FC = () => {
   });
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 w-full bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-6">Contáctanos</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-lg mx-auto space-y-4">

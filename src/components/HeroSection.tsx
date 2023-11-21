@@ -18,18 +18,18 @@ const HeroSection: React.FC = () => {
           <defs>
             <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5">
               <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-              <stop offset="0%" stop-color="rgba(0, 0, 255, 1)"></stop>
-              <stop offset="100%" stop-color="rgba(0, 0, 255, 0)"></stop>
+              <stop offset="0%" stopColor="rgba(0, 0, 255, 1)"></stop>
+              <stop offset="100%" stopColor="rgba(0, 0, 255, 0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5">
               <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-              <stop offset="0%" stop-color="rgba(255, 215, 0, 1)"></stop>
-              <stop offset="100%" stop-color="rgba(255, 215, 0, 0)"></stop>
+              <stop offset="0%" stopColor="rgba(255, 215, 0, 1)"></stop>
+              <stop offset="100%" stopColor="rgba(255, 215, 0, 0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5">
               <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-              <stop offset="0%" stop-color="rgba(255, 255, 255, 1)"></stop>
-              <stop offset="100%" stop-color="rgba(255, 255, 255, 0)"></stop>
+              <stop offset="0%" stopColor="rgba(255, 255, 255, 1)"></stop>
+              <stop offset="100%" stopColor="rgba(255, 255, 255, 0)"></stop>
             </radialGradient>
           </defs>
 
