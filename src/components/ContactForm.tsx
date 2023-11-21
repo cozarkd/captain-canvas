@@ -44,6 +44,11 @@ const ContactFormSection: React.FC = () => {
             {errors.name && <small className="text-red-600">{errors.name.message?.toString()}</small>}
           </div>
           <div>
+            <label htmlFor="organization" className="block mb-2 text-sm font-medium text-gray-700">Organización</label>
+            <Input id="organization" type="text" {...register("organization", { required: "El nombre de la organización es obligatorio" })} />
+            {errors.organization && <small className="text-red-600">{errors.organization.message?.toString()}</small>}
+          </div>
+          <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">Email</label>
             <Input id="email" type="email" required {...register("email", { required: "El email es obligatorio" })} />
             {errors.email && <small className="text-red-600">{errors.email.message?.toString()}</small>}
