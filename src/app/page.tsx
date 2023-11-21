@@ -1,4 +1,6 @@
+// src/app/page.tsx
 
+// import '../utils/i18n';
 
 import NavBar from '@/components/NavBar';
 import FeaturesSection from '@/components/FeaturesSection';
@@ -9,6 +11,7 @@ import ContactForm from '@/components/ContactForm';
 
 
 export default function Home() {
+
   return (
 
     <main className="flex min-h-screen flex-col items-center justify-between">

@@ -1,14 +1,17 @@
-// src/components/HeroSection.client.tsx
+// src/components/HeroSection.tsx
 "use client"
 
 import React from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { PlayCircle } from 'lucide-react';
 import useScrollToSection from '@/hooks/useScrollToSection';
 
 const HeroSection: React.FC = () => {
   const handleScrollToSection = useScrollToSection();
+  const { t } = useTranslation();
 
   return (
     <section className="h-screen relative w-full">
@@ -54,7 +57,7 @@ const HeroSection: React.FC = () => {
         <Image src="/logo_icon.png" alt="Logo" width={400} height={100} className="mb-4 drop-shadow-lg" />
 
         <div className="mb-4">
-          <h1 className="text-4xl font-bold">Captain Canvas es tu maquetador automático.</h1>
+          <h1 className="text-4xl font-bold">{t('h1')}Captain Canvas es tu maquetador automático.</h1>
           <p className="mx-auto mt-2 max-w-2xl text-lg">Ahora tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima. </p>
         </div>
 
