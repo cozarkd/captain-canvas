@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Captain Canvas es tu maquetador automático',
-  description: 'Ahora tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.',
+  description:
+    'Ahora tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.',
 }
 
 export async function generateStaticParams() {

@@ -1,12 +1,12 @@
 {
-    "hero": {
-        "h1": "Captain Canvas es tu maquetador automático",
-        "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
-        "btnPricing": "Ver precios",
-        "btnDownload": "Descarga la aplicación"
-      },
-    "counter": {
-      "increment": "Increment",
-      "decrement": "Decrement"
-    }
+  "hero": {
+    "h1": "Captain Canvas es tu maquetador automático",
+    "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
+    "btnPricing": "Ver precios",
+    "btnDownload": "Descarga la aplicación"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
   }
+}

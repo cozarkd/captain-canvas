@@ -1,15 +1,15 @@
 // src/hooks/useScrollToSection.tsx
-import { useCallback } from 'react';
+import { useCallback } from 'react'
 
 const useScrollToSection = () => {
   const handleScrollToSection = useCallback((sectionId: string) => {
-    const section = document.getElementById(sectionId);
+    const section = document.getElementById(sectionId)
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' })
     }
-  }, []);
+  }, [])
 
-  return handleScrollToSection;
-};
+  return handleScrollToSection
+}
 
-export default useScrollToSection;
+export default useScrollToSection
