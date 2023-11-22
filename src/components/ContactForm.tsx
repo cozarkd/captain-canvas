@@ -53,7 +53,7 @@ const ContactFormSection: React.FC = () => {
             <Input id="email" type="email" required {...register("email", { required: "El email es obligatorio" })} />
             {errors.email && <small className="text-red-600">{errors.email.message?.toString()}</small>}
           </div>
-          <div>
+          {/* <div>
             <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-700">Asunto</label>
             <Select {...register("subject")}>
               <SelectTrigger id="subject" aria-label="Asunto">
@@ -66,7 +66,7 @@ const ContactFormSection: React.FC = () => {
                 <SelectItem value="general">General</SelectItem>
               </SelectContent>
             </Select>
-          </div>
+          </div> */}
           <div>
             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">Mensaje</label>
             <Textarea id="message" rows={4} {...register("message", { required: "El mensaje es obligatorio" })} />

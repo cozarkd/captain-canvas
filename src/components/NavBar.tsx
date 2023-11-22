@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import useScrollToSection from '@/hooks/useScrollToSection';
+import LocaleSwitcher from '@/components/locale-switcher'
 
 
 const Navbar: React.FC = () => {
@@ -21,6 +22,8 @@ const Navbar: React.FC = () => {
             <a onClick={() => handleScrollToSection('pricing')}>Precios</a>
             <a onClick={() => handleScrollToSection('download')}>Descargar</a>
             <a onClick={() => handleScrollToSection('contacto')}>Contacto</a>
+
+            <LocaleSwitcher />
         </div>
       </div>
     </nav>

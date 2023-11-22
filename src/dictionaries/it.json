@@ -1,0 +1,9 @@
+{
+    "hero": {
+      "h1": "Welcome"
+    },
+    "counter": {
+      "increment": "Increment",
+      "decrement": "Decrement"
+    }
+  }

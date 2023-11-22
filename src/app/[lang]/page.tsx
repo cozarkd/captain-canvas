@@ -1,6 +1,8 @@
 // src/app/page.tsx
 
-// import '../utils/i18n';
+
+import { getDictionary } from '@/get-dictionary'
+import { Locale } from '@/i18n-config'
 
 import NavBar from '@/components/NavBar';
 import FeaturesSection from '@/components/FeaturesSection';
@@ -10,14 +12,18 @@ import HeroSection from '@/components/HeroSection';
 import ContactForm from '@/components/ContactForm';
 
 
-export default function Home() {
-
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}) {
+  const dictionary = await getDictionary(lang)
   return (
 
     <main className="flex min-h-screen flex-col items-center justify-between">
       <NavBar />
 
-      <HeroSection />
+      <HeroSection dictionary={dictionary.hero}/>
       <FeaturesSection />
       <PricingSection />
       <DownloadSection />
