@@ -1,12 +1,60 @@
 {
-  "hero": {
-    "h1": "Captain Canvas is your automatic layout assistant",
-    "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
-    "btnPricing": "Ver precios",
-    "btnDownload": "Descarga la aplicación"
+  "metadata": {
+    "title": "Captain Canvas - Your Automatic Layout Tool",
+    "description": "Save time and optimize your workflow with automatic image layout and mural creation."
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "NavBar": {
+    "pricing": "Pricing",
+    "download": "Download",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "h1": "Captain Canvas - Your Automatic Layout Tool",
+    "description": "Save time and space on your print canvases by optimally organizing all your elements.",
+    "btnPricing": "Buy License",
+    "btnDownload": "Download the App"
+  },
+  "features": {
+    "mainTitle": "Features",
+    "title1": "Efficient Layout",
+    "description1": "Make the most of your print sheet space using an efficient algorithm to position images.",
+    "title2": "Add More Copies",
+    "description2": "You can add more copies of an image. It will be useful if you want to fill the space with small elements.",
+    "title3": "Multiple Formats",
+    "description3": "Export your canvases to JPG or PDF. You can also embed the sRGB color profile.",
+    "title4": "Intuitive Interface",
+    "description4": "An easy-to-use user interface.",
+    "title5": "Multiplatform",
+    "description5": "Works on Windows and Mac.",
+    "title6": "Private",
+    "description6": "The app runs on your computer. No data is sent to any server."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "pricingTableId": "prctbl_1OFhuGFmcuZXk41ca3drYtzv",
+    "publishableKey": "pk_live_51O1vQSFmcuZXk41clT1vXPFAWx47QhrSH56ptLvIcOPTZ0gFwiQR5cJLXRxbEm9Og7RzgggwqS51iP1OO1Jfhr5D00Rz9LgGXk"
+  },
+  "download": {
+    "title": "Download the App",
+    "description": "Get the latest version of our desktop application.",
+    "description2": "Without a license, you can only preview the result.",
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a question? Want to report a bug? Want to suggest a new feature?",
+    "name": "Name",
+    "organization": "Organization",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "nameRequired": "Name is required",
+    "organizationRequired": "Organization is required",
+    "emailRequired": "Email is required",
+    "messageRequired": "Message is required",
+    "submit": "Submit",
+    "sending": "Sending..."
   }
 }

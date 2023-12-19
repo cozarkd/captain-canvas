@@ -1,12 +1,62 @@
 {
+  "metadata": {
+    "title": "Captain Canvas es tu maquetador automático",
+    "description": "Ahorra tiempo y optimiza tu flujo de trabajo con la maquetación automática de imágenes y creación de murales."
+  },
+  "NavBar": {
+    "pricing": "Precios",
+    "download": "Descarga",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
   "hero": {
     "h1": "Captain Canvas es tu maquetador automático",
     "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
-    "btnPricing": "Ver precios",
+    "btnPricing": "Comprar licencia",
     "btnDownload": "Descarga la aplicación"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "features": {
+    "mainTitle": "Características",
+    "title1": "Maquetación eficiente",
+    "description1": "Aprovecha el espacio de tus hojas de impresión utilizando un algoritmo eficiente para posicionar las imágenes.",
+    "title2": "Añade más copias",
+    "description2": "Puedes añadir más copias de una imagen. Será útil si quieres rellenar el espacio con elementos pequeños.",
+    "title3": "Varios formatos",
+    "description3": "Exporta tus lienzos a JPG o PDF. También puedes incrustar el perfil de color sRGB.",
+    "title4": "Interfaz intuitiva",
+    "description4": "Una interfaz de usuario fácil de usar.",
+    "title5": "Multiplataforma",
+    "description5": "Funciona en Windows y Mac.",
+    "title6": "Privado",
+    "description6": "La aplicación se ejecuta en tu computadora. No se envían datos a ningún servidor."
+  },
+  "pricing": {
+    "title": "Precios",
+    "pricingTableId": "prctbl_1OFhuGFmcuZXk41ca3drYtzv",
+    "publishableKey": "pk_live_51O1vQSFmcuZXk41clT1vXPFAWx47QhrSH56ptLvIcOPTZ0gFwiQR5cJLXRxbEm9Og7RzgggwqS51iP1OO1Jfhr5D00Rz9LgGXk"
+  },
+  "download": {
+    "title": "Descarga la aplicación",
+    "description": "Obtén la última versión de nuestra aplicación para escritorio.",
+    "description2": "Sin licencia sólo podrás previsualizar el resultado.",
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes alguna pregunta? ¿Quieres informar de un error? ¿Quieres sugerir una nueva característica?",
+    "name": "Nombre",
+    "organization": "Empresa",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "nameRequired": "El nombre es obligatorio",
+    "organizationRequired": "La empresa es obligatoria",
+    "emailRequired": "El email es obligatorio",
+    "messageRequired": "El mensaje es obligatorio",
+    "submit": "Enviar",
+    "sending": "Enviando..."
   }
 }
+
+

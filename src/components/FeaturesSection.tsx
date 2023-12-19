@@ -4,39 +4,65 @@ import React from 'react'
 import { Card } from '@/components/ui/card'
 import { Monitor, Code, UserCheck } from 'lucide-react' // Importa los íconos que necesitas
 
-type Feature = {
-  title: string
-  description: string
-  icon: React.ReactNode
-}
+type FeaturesSectionProps = {
+  dictionary: {
+    [key: string]: string;
+  };
+};
 
-const features: Feature[] = [
-  {
-    title: 'Interfaz Intuitiva',
-    description: 'Una interfaz de usuario fácil de usar y elegante.',
-    icon: <Monitor size={32} />,
-  },
-  {
-    title: 'Desarrollo Eficiente',
-    description: 'Herramientas para mejorar tu flujo de trabajo de desarrollo.',
-    icon: <Code size={32} />,
-  },
-  {
-    title: 'Soporte Confiable',
-    description: 'Soporte al cliente excepcional y confiable.',
-    icon: <UserCheck size={32} />,
-  },
-  // Agrega más características según sea necesario
-]
+const icons = {
+  monitor: <Monitor size={32} />,
+  code: <Code size={32} />,
+  userCheck: <UserCheck size={32} />,
+};
 
-const FeaturesSection: React.FC = () => {
+
+
+export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
+  const featuresSection = {
+    mainTitle: dictionary.mainTitle,
+  };
+  const features = [
+    {
+      title: dictionary.title1,
+      description: dictionary.description1,
+      icon: icons.monitor,
+    },
+    {
+      title: dictionary.title2,
+      description: dictionary.description2,
+      icon: icons.userCheck,
+    },
+    {
+      title: dictionary.title3,
+      description: dictionary.description3,
+      icon: icons.userCheck,
+    },
+    {
+      title: dictionary.title4,
+      description: dictionary.description4,
+      icon: icons.userCheck,
+    },
+    {
+      title: dictionary.title5,
+      description: dictionary.description5,
+      icon: icons.userCheck,
+    },
+    {
+      title: dictionary.title6,
+      description: dictionary.description6,
+      icon: icons.userCheck,
+    },
+
+  ];
+
   return (
-    <section className='py-12 w-full bg-white'>
+    <section className='container py-12 w-full bg-foreground'>
       <div className='container mx-auto px-4'>
-        <h2 className='text-3xl font-bold text-center mb-6'>Características Principales</h2>
+        <h2 className='text-3xl font-bold text-center mb-6 text-primary'>{featuresSection.mainTitle}</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {features.map((feature, index) => (
-            <Card key={index} className='p-6 text-center'>
+            <Card key={index} className='p-6 bg-primary border-0'>
               <div className='mb-3'>{feature.icon}</div>
               <h3 className='text-xl font-semibold mb-2'>{feature.title}</h3>
               <p>{feature.description}</p>
@@ -48,4 +74,4 @@ const FeaturesSection: React.FC = () => {
   )
 }
 
-export default FeaturesSection
+

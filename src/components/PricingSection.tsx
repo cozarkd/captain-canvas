@@ -2,61 +2,36 @@
 
 import React from 'react'
 
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import StripePricingTable from '@/utils/StripePricingTable'
 
-type PricingOption = {
-  title: string
-  description: string
-  buttonText: string
-  buttonVariant?: 'default' | 'secondary'
-}
+type PricingSectionProps = {
+  dictionary: {
+    [key: string]: string;
+  };
+};
 
-const pricingOptions: PricingOption[] = [
-  {
-    title: 'Prueba',
-    description: 'Prueba gratuita por 7 días',
-    buttonText: 'Solicitar Trial',
-    buttonVariant: 'default',
-  },
-  {
-    title: 'Plan Mensual',
-    description: '$9.99 al mes',
-    buttonText: 'Suscribirse',
-    buttonVariant: 'default',
-  },
-  {
-    title: 'Plan Anual',
-    description: '$99.99 al año',
-    buttonText: 'Suscribirse',
-    buttonVariant: 'default',
-  },
-  {
-    title: 'Licencia Lifetime',
-    description: '$299 una vez',
-    buttonText: 'Comprar ahora',
-    buttonVariant: 'secondary',
-  },
-]
 
-const PricingSection: React.FC = () => {
+
+export default function  PricingSection({ dictionary }: PricingSectionProps) {
+  const pricing = {
+    title: dictionary.title,
+    pricingTableId: dictionary.pricingTableId,
+    publishableKey: dictionary.publishableKey,
+  };
+
   return (
-    <section id='pricing' className='bg-gray-100 w-full py-12'>
-      <div className='container mx-auto p-4'>
-        <h2 className='text-3xl font-bold text-center mb-6'>Planes y Precios</h2>
+    <section id='pricing' className='container bg-accent w-full py-12'>
 
-        <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
-          {pricingOptions.map((option, index) => (
-            <Card key={index} className='p-6 text-center'>
-              <h3 className='text-xl font-semibold mb-3'>{option.title}</h3>
-              <p className='mb-5'>{option.description}</p>
-              <Button variant={option.buttonVariant}>{option.buttonText}</Button>
-            </Card>
-          ))}
-        </div>
+      <div className='container mx-auto p-4'>
+        <h2 className='text-3xl font-bold text-center mb-6'>{pricing.title}</h2>
+        <StripePricingTable 
+          pricingTableId= {pricing.pricingTableId}
+          publishableKey= {pricing.publishableKey}
+        />
       </div>
     </section>
   )
 }
 
-export default PricingSection

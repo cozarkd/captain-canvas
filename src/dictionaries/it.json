@@ -1,12 +1,60 @@
 {
-  "hero": {
-    "h1": "Captain Canvas es tu maquetador automático",
-    "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
-    "btnPricing": "Ver precios",
-    "btnDownload": "Descarga la aplicación"
+  "metadata": {
+    "title": "Captain Canvas - Il Tuo Strumento Automatico di Impaginazione",
+    "description": "Risparmia tempo e ottimizza il tuo flusso di lavoro con l'impaginazione automatica delle immagini e la creazione di murali."
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
+  "NavBar": {
+    "pricing": "Prezzi",
+    "download": "Scarica",
+    "contact": "Contatto",
+    "language": "Lingua"
+  },
+  "hero": {
+    "h1": "Captain Canvas - Il Tuo Strumento Automatico di Impaginazione",
+    "description": "Risparmia tempo e spazio sui tuoi telai di stampa organizzando ottimamente tutti i tuoi elementi.",
+    "btnPricing": "Acquista Licenza",
+    "btnDownload": "Scarica l'App"
+  },
+  "features": {
+    "mainTitle": "Caratteristiche",
+    "title1": "Impaginazione Efficiente",
+    "description1": "Sfrutta al massimo lo spazio del tuo foglio di stampa utilizzando un algoritmo efficiente per posizionare le immagini.",
+    "title2": "Aggiungi Altre Copie",
+    "description2": "Puoi aggiungere altre copie di un'immagine. Sarà utile se vuoi riempire lo spazio con piccoli elementi.",
+    "title3": "Formati Multipli",
+    "description3": "Esporta i tuoi telai in JPG o PDF. Puoi anche incorporare il profilo colore sRGB.",
+    "title4": "Interfaccia Intuitiva",
+    "description4": "Un'interfaccia utente facile da usare.",
+    "title5": "Multi-piattaforma",
+    "description5": "Funziona su Windows e Mac.",
+    "title6": "Privato",
+    "description6": "L'applicazione funziona sul tuo computer. Nessun dato viene inviato a nessun server."
+  },
+  "pricing": {
+    "title": "Prezzi",
+    "pricingTableId": "prctbl_1OOkfcFmcuZXk41cBVSLtYfZ",
+    "publishableKey": "pk_test_51O1vQSFmcuZXk41cxvbS5ItxDR5Lwuzyi5P32jT4fM9ijoEjCa6YD0JiLtdvIivH0qWjKQMIrLksbogslxeiJdTG00mmhhzIWA"
+  },
+  "download": {
+    "title": "Scarica l'App",
+    "description": "Ottieni l'ultima versione della nostra applicazione per desktop.",
+    "description2": "Senza licenza, puoi solo visualizzare l'anteprima del risultato.",
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "contact": {
+    "title": "Contatto",
+    "description": "Hai una domanda? Vuoi segnalare un bug? Vuoi suggerire una nuova funzionalità?",
+    "name": "Nome",
+    "organization": "Organizzazione",
+    "email": "Email",
+    "subject": "Oggetto",
+    "message": "Messaggio",
+    "nameRequired": "Il nome è obbligatorio",
+    "organizationRequired": "L'organizzazione è obbligatoria",
+    "emailRequired": "L'email è obbligatoria",
+    "messageRequired": "Il messaggio è obbligatorio",
+    "submit": "Invia",
+    "sending": "Inviando..."
   }
 }

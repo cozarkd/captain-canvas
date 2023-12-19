@@ -15,7 +15,28 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 
-const ContactFormSection: React.FC = () => {
+type ContactSectionProps = {
+  dictionary: {
+    [key: string]: string;
+  };
+};
+
+export default function ContactFormSection({ dictionary }: ContactSectionProps) {
+  const contact = {
+    title: dictionary.title,
+    name: dictionary.name,
+    organization: dictionary.organization,
+    email: dictionary.email,
+    subject: dictionary.subject,
+    message: dictionary.message,
+    nameRequired: dictionary.nameRequired,
+    organizationRequired: dictionary.organizationRequired,
+    emailRequired: dictionary.emailRequired,
+    messageRequired: dictionary.messageRequired,
+    submit: dictionary.submit,
+    sending: dictionary.sending,
+  };
+
   const {
     register,
     handleSubmit,
@@ -38,33 +59,33 @@ const ContactFormSection: React.FC = () => {
   })
 
   return (
-    <section className='py-12 w-full bg-gray-100'>
+    <section id="contact" className='container py-12 w-full bg-secondary'>
       <div className='container mx-auto px-4'>
-        <h2 className='text-3xl font-bold text-center mb-6'>Contáctanos</h2>
+        <h2 className='text-3xl font-bold text-center mb-6 text-primary'>{contact.title}</h2>
         <form onSubmit={handleSubmit(onSubmit)} className='max-w-lg mx-auto space-y-4'>
           <input type='hidden' {...register('botcheck')} />
           <div>
-            <label htmlFor='name' className='block mb-2 text-sm font-medium text-gray-700'>
-              Nombre
+            <label htmlFor='name' className='block mb-2 text-sm font-medium text-primary'>
+              {contact.name}
             </label>
             <Input
               id='name'
               type='text'
-              {...register('name', { required: 'El nombre es obligatorio' })}
+              {...register('name', { required: contact.nameRequired })}
             />
             {errors.name && (
               <small className='text-red-600'>{errors.name.message?.toString()}</small>
             )}
           </div>
           <div>
-            <label htmlFor='organization' className='block mb-2 text-sm font-medium text-gray-700'>
-              Organización
+            <label htmlFor='organization' className='block mb-2 text-sm font-medium text-primary'>
+              {contact.organization}
             </label>
             <Input
               id='organization'
               type='text'
               {...register('organization', {
-                required: 'El nombre de la organización es obligatorio',
+                required: contact.organizationRequired,
               })}
             />
             {errors.organization && (
@@ -72,14 +93,14 @@ const ContactFormSection: React.FC = () => {
             )}
           </div>
           <div>
-            <label htmlFor='email' className='block mb-2 text-sm font-medium text-gray-700'>
-              Email
+            <label htmlFor='email' className='block mb-2 text-sm font-medium text-primary'>
+              {contact.email}
             </label>
             <Input
               id='email'
               type='email'
               required
-              {...register('email', { required: 'El email es obligatorio' })}
+              {...register('email', { required: contact.emailRequired })}
             />
             {errors.email && (
               <small className='text-red-600'>{errors.email.message?.toString()}</small>
@@ -100,13 +121,13 @@ const ContactFormSection: React.FC = () => {
             </Select>
           </div> */}
           <div>
-            <label htmlFor='message' className='block mb-2 text-sm font-medium text-gray-700'>
-              Mensaje
+            <label htmlFor='message' className='block mb-2 text-sm font-medium text-primary'>
+              {contact.message}
             </label>
             <Textarea
               id='message'
               rows={4}
-              {...register('message', { required: 'El mensaje es obligatorio' })}
+              {...register('message', { required: contact.messageRequired })}
             />
             {errors.message && (
               <small className='text-red-600'>{errors.message.message?.toString()}</small>
@@ -114,7 +135,7 @@ const ContactFormSection: React.FC = () => {
           </div>
           <div className='text-center'>
             <Button type='submit' disabled={isSubmitting}>
-              {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
+              {isSubmitting ? contact.sending : contact.submit}
             </Button>
           </div>
         </form>
@@ -123,4 +144,3 @@ const ContactFormSection: React.FC = () => {
   )
 }
 
-export default ContactFormSection

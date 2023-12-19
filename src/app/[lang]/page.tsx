@@ -14,15 +14,14 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const dictionary = await getDictionary(lang)
   return (
     <main className='flex min-h-screen flex-col items-center justify-between'>
-      <NavBar />
 
+      <NavBar dictionary={dictionary.NavBar} />
       <HeroSection dictionary={dictionary.hero} />
-      <FeaturesSection />
-      <PricingSection />
-      <DownloadSection />
-      <ContactForm />
-
-      {/* Cualquier otro contenido que desees añadir */}
+      <FeaturesSection dictionary={dictionary.features} />
+      <PricingSection dictionary={dictionary.pricing} />
+      <DownloadSection dictionary={dictionary.download} />
+      <ContactForm dictionary={dictionary.contact} />
+      
     </main>
   )
 }

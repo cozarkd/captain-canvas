@@ -11,7 +11,11 @@ import {
 
 import { i18n } from '@/i18n-config'
 
-export default function LocaleSwitcher() {
+type LocaleSwitcherProps = {
+  language: string;
+};
+
+export default function LocaleSwitcher({ language }: LocaleSwitcherProps) {
   const pathName = usePathname()
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/'
@@ -21,12 +25,12 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative text-primary'>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button className=''>Idioma</button>
+          <button className=''>{language}</button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className='min-w-[4rem]'>
+        <DropdownMenuContent className='min-w-[4rem] bg-primary border-secondary'>
           {i18n.locales.map((locale) => (
             <DropdownMenuItem key={locale} className='flex items-center justify-center text-center'>
               <Link href={redirectedPathName(locale)}>
