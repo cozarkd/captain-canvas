@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Captain Canvas - Your Automatic Layout Tool",
-    "description": "Save time and optimize your workflow with automatic image layout and mural creation."
+    "title": "Captain Canvas: Intelligent Image and Tiling Layout Tool",
+    "description": "Experience automatic layout with our tool designed to simplify your workflow in creating murals and images. Perfect for design professionals and enthusiasts, it facilitates efficient organization of elements in your projects, optimizing time and space on Windows and Mac platforms."
   },
   "NavBar": {
     "pricing": "Pricing",
@@ -10,8 +10,8 @@
     "language": "Language"
   },
   "hero": {
-    "h1": "Captain Canvas - Your Automatic Layout Tool",
-    "description": "Save time and space on your print canvases by optimally organizing all your elements.",
+    "h1": "Intelligent Image and Mural Layout Tool",
+    "description": "Automate and simplify your layout process with advanced and efficient technology, designed for professionals and design enthusiasts.",
     "btnPricing": "Buy License",
     "btnDownload": "Download the App"
   },

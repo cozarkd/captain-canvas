@@ -29,10 +29,10 @@ export default function DownloadSection({ dictionary }: DownloadSectionProps) {
         <p className='mb-4'>{download.description}</p>
         <p className='mb-4'>{download.description2}</p>
         <div className='flex gap-2 mt-4'>
-          <Button className='text-accent' variant='secondary'>
+          <Button className='text-accent px-12' variant='secondary'>
             <HardDriveDownload className="mr-2"/>{download.windows}
           </Button>
-          <Button className='text-accent' variant='secondary'>
+          <Button className='text-accent px-12' variant='secondary'>
             <HardDriveDownload className="mr-2"/>{download.mac}
           </Button>      
         </div>

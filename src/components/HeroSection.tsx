@@ -20,18 +20,18 @@ export default function HeroSection({
   const handleScrollToSection = useScrollToSection()
 
   return (
-    <section className='flex column lg:flex-row items-center h-screen-mobile relative w-full bg-background'>
+    <section className='flex column lg:flex-row items-center h-screen-mobile relative w-full bg-background pt-[60px]'>
 
-      <div className='container mx-auto flex flex-col-reverse md:flex-row items-center mt-[60px]'>
-        <div className='flex flex-col pb-10 w-full md:w-1/2'>
+      <div className='container mx-auto flex flex-col-reverse gap-4 md:flex-row items-center'>
+        <div className='flex flex-col justify-stretch items-stretch w-full md:w-1/2'>
 
-          <div className='mb-4'>
-            <h1 className='text-3xl md:text-5xl font-bold text-secondary'>{dictionary.h1}</h1>
-            <p className='mx-auto mt-2 max-w-2xl text-l md:text-lg'>{dictionary.description}</p>
+          <div className='mb-4 sm:mb-4'>
+            <h1 className='text-2xl mb-2 sm:mb-4 leading-tight md:text-4xl md:leading-tight font-bold text-secondary'>{dictionary.h1}</h1>
+            <p className='mt-2 max-w-2xl text-l md:text-lg'>{dictionary.description}</p>
           </div>
 
           <div className='flex flex-col md:flex-row gap-2 md:gap-4'>
-            <Button className='text-accent border-2 border-accent' variant='outline' onClick={() => handleScrollToSection('pricing')}>
+            <Button className='border-secondary md:px-12' variant='accent' onClick={() => handleScrollToSection('pricing')}>
               {dictionary.btnPricing}
             </Button>
             <Button className='' variant='ghost' onClick={() => handleScrollToSection('download')}>
@@ -39,7 +39,7 @@ export default function HeroSection({
             </Button>
           </div>
         </div>
-        <div className='flex justify-center drop-shadow-2xl w-2/3 md:w-1/2 '>
+        <div className='flex justify-center drop-shadow-2xl w-3/4 md:w-1/2 '>
           <Image
               src='/logo_icon.png'
               alt='Logo'

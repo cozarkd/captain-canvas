@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Card } from '@/components/ui/card'
-import { Monitor, Code, UserCheck } from 'lucide-react' // Importa los íconos que necesitas
+import { Monitor, Code, UserCheck, LayoutPanelLeft, Diff, ImagePlus, FileKey } from 'lucide-react' // Importa los íconos que necesitas
 
 type FeaturesSectionProps = {
   dictionary: {
@@ -14,6 +14,10 @@ const icons = {
   monitor: <Monitor size={32} />,
   code: <Code size={32} />,
   userCheck: <UserCheck size={32} />,
+  layoutPanelLeft: <LayoutPanelLeft size={32} />,
+  diff: <Diff size={32} />,
+  imagePlus: <ImagePlus size={32} />,
+  fileKey: <FileKey size={32} />,
 };
 
 
@@ -26,17 +30,17 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
     {
       title: dictionary.title1,
       description: dictionary.description1,
-      icon: icons.monitor,
+      icon: icons.layoutPanelLeft,
     },
     {
       title: dictionary.title2,
       description: dictionary.description2,
-      icon: icons.userCheck,
+      icon: icons.diff,
     },
     {
       title: dictionary.title3,
       description: dictionary.description3,
-      icon: icons.userCheck,
+      icon: icons.imagePlus,
     },
     {
       title: dictionary.title4,
@@ -46,12 +50,12 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
     {
       title: dictionary.title5,
       description: dictionary.description5,
-      icon: icons.userCheck,
+      icon: icons.monitor,
     },
     {
       title: dictionary.title6,
       description: dictionary.description6,
-      icon: icons.userCheck,
+      icon: icons.fileKey,
     },
 
   ];

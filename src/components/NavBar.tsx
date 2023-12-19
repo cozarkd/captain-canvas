@@ -31,7 +31,7 @@ export default function Navbar({ dictionary }: NavBarProps) {
     <nav className='w-full fixed top-0 z-50 bg-foreground shadow-md'>
       <div className='container relative mx-auto flex items-center justify-between py-4'>
         
-        <div className='logo pt-1 text-primary w-48'>
+        <div className='logo pt-1 text-primary w-32 sm:w-48'>
           <Logo />
         </div>
 
@@ -42,7 +42,7 @@ export default function Navbar({ dictionary }: NavBarProps) {
           </button>
         </div>
 
-        <div className={`absolute top-[60px] right-0 flex flex-col items-center bg-secondary p-4 text-primary text-2xl space-x-2 ${isMenuOpen ? 'flex' : 'hidden'} md:relative md:flex md:flex-row md:top-auto`}>
+        <div className={`absolute top-[60px] right-0 flex flex-col items-center bg-secondary p-4 text-primary text-2xl space-x-2 rounded-bl-lg shadow-2xl  ${isMenuOpen ? 'flex' : 'hidden'} md:relative md:flex md:flex-row md:top-auto md:shadow-none`}>
           <Button variant='link' onClick={() => handleScrollToSection('pricing')}>
             {navbar.pricing}
           </Button>

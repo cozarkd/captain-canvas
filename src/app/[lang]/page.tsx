@@ -17,7 +17,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
       <NavBar dictionary={dictionary.NavBar} />
       <HeroSection dictionary={dictionary.hero} />
-      <FeaturesSection dictionary={dictionary.features} />
+      {/* incluir video */} 
+      <FeaturesSection dictionary={dictionary.features} /> {/* Añadir Tabs para cada módulo */}
       <PricingSection dictionary={dictionary.pricing} />
       <DownloadSection dictionary={dictionary.download} />
       <ContactForm dictionary={dictionary.contact} />

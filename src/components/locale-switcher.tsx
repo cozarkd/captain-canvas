@@ -9,6 +9,9 @@ import {
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu'
 
+import { Button } from '@/components/ui/button';
+
+
 import { i18n } from '@/i18n-config'
 
 type LocaleSwitcherProps = {
@@ -28,9 +31,12 @@ export default function LocaleSwitcher({ language }: LocaleSwitcherProps) {
     <div className='relative'>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button className='text-sm md:text-m'>{language}</button>
+          <Button variant='link'>
+          {language}
+          </Button>
+          {/* <button className='text-sm md:text-m'>{language}</button> */}
         </DropdownMenuTrigger>
-        <DropdownMenuContent className='mt-3 min-w-[4rem] bg-secondary text-sm border-accent border-2'>
+        <DropdownMenuContent className='mt-1 min-w-[4rem] bg-secondary text-sm border-accent border-2 rounded-lg'>
           {i18n.locales.map((locale) => (
             <DropdownMenuItem key={locale} className='flex items-center justify-center text-center text-primary'>
               <Link href={redirectedPathName(locale)}>

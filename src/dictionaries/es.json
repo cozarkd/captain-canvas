@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Captain Canvas es tu maquetador automático",
-    "description": "Ahorra tiempo y optimiza tu flujo de trabajo con la maquetación automática de imágenes y creación de murales."
+    "title": "Captain Canvas: Maquetador inteligente de imágenes y murales",
+    "description": "Experimenta la maquetación automática con nuestra herramienta diseñada para simplificar tu flujo de trabajo en la creación de murales e imágenes. Perfecta para profesionales del diseño y aficionados, facilita la organización eficiente de elementos en tus proyectos, optimizando tiempo y espacio en plataformas Windows y Mac."
   },
   "NavBar": {
     "pricing": "Precios",
@@ -10,8 +10,8 @@
     "language": "Idioma"
   },
   "hero": {
-    "h1": "Captain Canvas es tu maquetador automático",
-    "description": "Ahorra tiempo y espacio en tus lienzos de impresión organizando todos tus elementos de forma óptima.",
+    "h1": "Maquetador Inteligente de Imágenes y Murales",
+    "description": "Automatiza y simplifica tu proceso de maquetación con tecnología avanzada y eficiente, diseñada para profesionales y entusiastas del diseño.",
     "btnPricing": "Comprar licencia",
     "btnDownload": "Descarga la aplicación"
   },
