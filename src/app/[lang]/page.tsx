@@ -21,6 +21,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       <PricingSection dictionary={dictionary.pricing} />
       <DownloadSection dictionary={dictionary.download} />
       <ContactForm dictionary={dictionary.contact} />
+
+      {/* Incluir Footer */}
       
     </main>
   )

@@ -57,8 +57,8 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
   ];
 
   return (
-    <section className='container py-12 w-full bg-foreground'>
-      <div className='container mx-auto px-4'>
+    <section className='w-full py-12 bg-foreground'>
+      <div className='container'>
         <h2 className='text-3xl font-bold text-center mb-6 text-primary'>{featuresSection.mainTitle}</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {features.map((feature, index) => (

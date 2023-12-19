@@ -25,14 +25,14 @@ export default function LocaleSwitcher({ language }: LocaleSwitcherProps) {
   }
 
   return (
-    <div className='relative text-primary'>
+    <div className='relative'>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button className=''>{language}</button>
+          <button className='text-sm md:text-m'>{language}</button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className='min-w-[4rem] bg-primary border-secondary'>
+        <DropdownMenuContent className='mt-3 min-w-[4rem] bg-secondary text-sm border-accent border-2'>
           {i18n.locales.map((locale) => (
-            <DropdownMenuItem key={locale} className='flex items-center justify-center text-center'>
+            <DropdownMenuItem key={locale} className='flex items-center justify-center text-center text-primary'>
               <Link href={redirectedPathName(locale)}>
                 <span className='cursor-pointer'>{locale.toUpperCase()}</span>
               </Link>

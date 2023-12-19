@@ -22,7 +22,7 @@ export default function  PricingSection({ dictionary }: PricingSectionProps) {
   };
 
   return (
-    <section id='pricing' className='container bg-accent w-full py-12'>
+    <section id='pricing' className='w-full bg-accent py-12'>
 
       <div className='container mx-auto p-4'>
         <h2 className='text-3xl font-bold text-center mb-6'>{pricing.title}</h2>

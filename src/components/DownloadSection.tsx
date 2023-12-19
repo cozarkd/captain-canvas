@@ -23,8 +23,8 @@ export default function DownloadSection({ dictionary }: DownloadSectionProps) {
   };
 
   return (
-    <section id='download' className='container py-12 w-full bg-primary'>
-      <div className='flex flex-col items-center mx-auto px-4 text-center'>
+    <section id='download' className='w-full py-12 bg-primary'>
+      <div className='container flex flex-col items-center text-center'>
         <h2 className='text-3xl font-bold mb-6'>{download.title}</h2>
         <p className='mb-4'>{download.description}</p>
         <p className='mb-4'>{download.description2}</p>

@@ -59,8 +59,8 @@ export default function ContactFormSection({ dictionary }: ContactSectionProps) 
   })
 
   return (
-    <section id="contact" className='container py-12 w-full bg-secondary'>
-      <div className='container mx-auto px-4'>
+    <section id="contact" className='w-full py-12 bg-secondary'>
+      <div className='container mx-auto'>
         <h2 className='text-3xl font-bold text-center mb-6 text-primary'>{contact.title}</h2>
         <form onSubmit={handleSubmit(onSubmit)} className='max-w-lg mx-auto space-y-4'>
           <input type='hidden' {...register('botcheck')} />

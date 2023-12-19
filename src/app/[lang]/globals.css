@@ -75,4 +75,6 @@
   }
 }
 
-/* Añade estilos adicionales para el rectángulo, elipse y triángulo */
+.h-screen-mobile {
+  height: 100dvh;
+}
